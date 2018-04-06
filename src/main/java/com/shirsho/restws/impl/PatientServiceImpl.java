@@ -1,6 +1,9 @@
 package com.shirsho.restws.impl;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
@@ -24,6 +27,13 @@ public class PatientServiceImpl implements PatientService {
 		patient.setName("John");
 		patients.put(patient.getId(), patient);
 		
+	}
+	@Override
+	public List<Patient> getPatients() {
+		// TODO Auto-generated method stub
+		Collection<Patient> results= patients.values();
+		List<Patient> response = new ArrayList<>(results);
+		return response;
 	}
 	
 
