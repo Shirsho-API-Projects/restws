@@ -26,8 +26,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jersey</artifactId>
+    		<groupId>org.apache.cxf</groupId>
+    		<artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
+    		<version>3.2.4</version>
 		</dependency>
 
 		<dependency>
